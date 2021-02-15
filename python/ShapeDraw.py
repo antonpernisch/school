@@ -22,11 +22,11 @@ def DrawShape():
 
     elif shape == "3":
         r = input("Radius? Accepting only odd numbers!\n")
-        #try:
-        Circle(int(r))
-        #except:
-            #print("Radius must be a number!")
-            #DrawShape()
+        try:
+            Circle(int(r))
+        except:
+            print("Radius must be a number!")
+            DrawShape()
     
     else:
         print("Not a valid choice. Choose a number from options provided\n")
